@@ -1,3 +1,5 @@
+//! A library to read the content of CPIO file.
+
 #[cfg(test)]
 mod tests {
     #[test]
