@@ -1,5 +1,9 @@
 # `cpio_reader`
 
+[![GitHub Actions](https://github.com/toku-sa-n/cpio_reader/workflows/Rust/badge.svg)](https://github.com/toku-sa-n/cpio_reader/actions)
+[![Crates.io](https://img.shields.io/crates/v/cpio_reader)](https://crates.io/crates/cpio_reader)
+![Crates.io](https://img.shields.io/crates/l/cpio_reader)
+[![docs.rs](https://docs.rs/cpio_reader/badge.svg)](https://docs.rs/cpio_reader)
 
 A library to read the contents of the cpio file. (.cpio)
 
