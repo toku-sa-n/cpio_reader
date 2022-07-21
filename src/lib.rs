@@ -132,7 +132,7 @@ impl<'a> Entry<'a> {
 
     /// Returns the filename.
     #[must_use]
-    pub fn name(&self) -> &str {
+    pub fn name(&self) -> &'a str {
         self.name
     }
 
@@ -142,7 +142,7 @@ impl<'a> Entry<'a> {
     /// New ASCII Format and New CRC Format, this method returns an empty slice if the file is a
     /// hard link and is not the last entry of the multiple duplicate files.
     #[must_use]
-    pub fn file(&self) -> &[u8] {
+    pub fn file(&self) -> &'a [u8] {
         self.file
     }
 
