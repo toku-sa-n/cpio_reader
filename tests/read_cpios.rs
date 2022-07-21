@@ -20,6 +20,27 @@ fn read_crc() {
     general_test("tests/crc.cpio", test_files_for_newc_and_crc());
 }
 
+// https://github.com/toku-sa-n/cpio_reader/pull/8
+#[test]
+fn file_and_entry_live_as_long_as_underlying_data() {
+    let bin = fs::read("tests/crc.cpio").unwrap();
+
+    let file_finder = |name| {
+        for entry in cpio_reader::iter_files(&bin) {
+            if entry.name() == name {
+                return Some((entry.name(), entry.file()));
+            }
+        }
+
+        None
+    };
+
+    assert_eq!(
+        file_finder("magics/derich"),
+        Some(("magics/derich", "King\n".as_bytes()))
+    );
+}
+
 fn general_test(name: &'static str, files: HashSet<FileInfo>) {
     let bin_cpio = fs::read(name).unwrap();
 
