@@ -11,7 +11,7 @@ use {
 ///
 /// The iterator checks if the header of an entry is correct. If it is corrupt (e.g., wrong magic
 /// value), the iterator stops iterating.
-pub fn iter_files(cpio_binary: &[u8]) -> impl Iterator<Item = Entry<'_>> {
+pub fn iter_files<'a>(cpio_binary: &'a [u8]) -> impl Iterator<Item = Entry<'a>> {
     Iter::new(cpio_binary)
 }
 
