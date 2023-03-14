@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+### Changed
+- Updated `bitflags` to 2.0.0 ([#11]).
 
 ## [0.1.1] - 2022-07-21
 ### Added
@@ -13,6 +15,7 @@
 ### Added
 - Initial version.
 
+[#11]: https://github.com/toku-sa-n/cpio_reader/pull/11
 [#8]: https://github.com/toku-sa-n/cpio_reader/pull/8
 [#7]: https://github.com/toku-sa-n/cpio_reader/pull/7
 
