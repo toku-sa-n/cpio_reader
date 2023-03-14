@@ -1,6 +1,9 @@
 # Changelog
 
 ## [Unreleased]
+### Added
+- Sponsor information on the GitHub repository page ([#12]).
+
 ### Changed
 - Updated `bitflags` to 2.0.0 ([#11]).
 
@@ -15,6 +18,7 @@
 ### Added
 - Initial version.
 
+[#12]: https://github.com/toku-sa-n/cpio_reader/pull/12
 [#11]: https://github.com/toku-sa-n/cpio_reader/pull/11
 [#8]: https://github.com/toku-sa-n/cpio_reader/pull/8
 [#7]: https://github.com/toku-sa-n/cpio_reader/pull/7
