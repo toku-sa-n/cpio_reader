@@ -347,6 +347,7 @@ impl<'a> Entry<'a> {
 
 bitflags! {
     /// File information.
+    #[derive(Copy, Clone, Debug, PartialEq, Eq, PartialOrd, Ord, Hash)]
     pub struct Mode: u32 {
         /// User executable bit.
         const USER_EXECUTABLE = 0o000_001;
