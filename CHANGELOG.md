@@ -1,16 +1,8 @@
 # Changelog
 
 ## [Unreleased]
-### Added
-- Sponsor information on the GitHub repository page ([#12]).
-
-### Changed
-- Updated `bitflags` to 2.0.0 ([#11]).
 
 ## [0.1.1] - 2022-07-21
-### Added
-- Badges are added to `README.md` ([#7]).
-
 ### Fixed
 - References returned by `Entry::(file|name)` are now alive as long as the underlying data ([#8]).
 
