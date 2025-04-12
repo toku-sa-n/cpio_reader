@@ -350,11 +350,11 @@ bitflags! {
     #[derive(Copy, Clone, Debug, PartialEq, Eq, PartialOrd, Ord, Hash)]
     pub struct Mode: u32 {
         /// User executable bit.
-        const USER_EXECUTABLE = 0o000_001;
+        const USER_EXECUTABLE = 0o000_100;
         /// User writable bit.
-        const USER_WRITABLE = 0o000_002;
+        const USER_WRITABLE = 0o000_200;
         /// User readable bit.
-        const USER_READABLE = 0o000_004;
+        const USER_READABLE = 0o000_400;
 
         /// Group executable bit.
         const GROUP_EXECUTABLE = 0o000_010;
@@ -364,11 +364,11 @@ bitflags! {
         const GROUP_READABLE = 0o000_040;
 
         /// Executable bit for the other groups.
-        const WORLD_EXECUTABLE = 0o000_100;
+        const WORLD_EXECUTABLE = 0o000_001;
         /// Writable bit for the other groups.
-        const WORLD_WRITABLE = 0o000_200;
+        const WORLD_WRITABLE = 0o000_002;
         /// Readable bit for the other groups.
-        const WORLD_READABLE = 0o000_400;
+        const WORLD_READABLE = 0o000_004;
 
         /// Sticky bit.
         const STICKY = 0o001_000;
