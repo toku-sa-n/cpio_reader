@@ -1,3 +1,5 @@
+#![allow(missing_docs)]
+
 use std::{collections::HashSet, fs, str};
 
 #[test]
